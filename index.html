@@ -996,6 +996,11 @@
             transition: transform 0.25s ease, box-shadow 0.25s ease;
         }
 
+        .yt-thumb-card.yt-horizontal {
+            max-width: 100%;
+            margin-bottom: 32px;
+        }
+
         .yt-thumb-card:hover {
             transform: translateY(-3px);
             box-shadow: 0 12px 40px rgba(0,0,0,0.12);
@@ -1006,6 +1011,10 @@
             display: block;
             aspect-ratio: 9 / 16;
             object-fit: cover;
+        }
+
+        .yt-thumb-card.yt-horizontal img {
+            aspect-ratio: 16 / 9;
         }
 
         .yt-play-btn {
@@ -1295,7 +1304,14 @@
         <div class="section-num">03</div>
         <div class="section-label">Workflow</div>
         <h2 style="margin-bottom: 16px;">ComfyUI Pipeline</h2>
-        <p class="body-text" style="margin-bottom: 56px;">The workflow is a sequence of specialised stages. Each stage produces a representation that the next stage consumes, so the project demonstrates workflow understanding rather than simply invoking one model.</p>
+        <p class="body-text" style="margin-bottom: 32px;">The workflow is a sequence of specialised stages. Each stage produces a representation that the next stage consumes, so the project demonstrates workflow understanding rather than simply invoking one model.</p>
+
+        <!-- Workflow Explainer Video -->
+        <a href="https://youtu.be/4SB__6hwmzY" target="_blank" class="yt-thumb-card yt-horizontal" style="margin: 0 auto 56px auto;">
+            <img src="https://i.ytimg.com/vi/4SB__6hwmzY/maxresdefault.jpg" alt="Workflow Explainer Video">
+            <div class="yt-play-btn">▶</div>
+            <div class="yt-thumb-label">ComfyUI Workflow Explainer Video</div>
+        </a>
 
         <!-- Step 01 -->
         <div class="workflow-step">
@@ -1525,6 +1541,14 @@
                 <div class="link-card-text">
                     <div class="link-card-title">Reference Video</div>
                     <div class="link-card-url">youtube.com/shorts/92172gsa-DI</div>
+                </div>
+                <span class="link-card-arrow">→</span>
+            </a>
+            <a href="https://youtu.be/4SB__6hwmzY" target="_blank" class="link-card">
+                <span class="link-card-icon">📺</span>
+                <div class="link-card-text">
+                    <div class="link-card-title">Workflow Explainer Video</div>
+                    <div class="link-card-url">youtu.be/4SB__6hwmzY</div>
                 </div>
                 <span class="link-card-arrow">→</span>
             </a>
